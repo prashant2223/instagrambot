@@ -9,7 +9,7 @@ import pyautogui
 
 path = r"C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(path)
-hashtags = ["#programming", "#coding", "#programmer", "#python"]
+hashtags = ["#programming", "#coding", "#programmer", "#python", "#java", "#c++", "#c", "#programmingmemes", "#programminghumor"]
 commentlist = []
 
 def login():
@@ -45,10 +45,10 @@ def getposts():
         pyautogui.press("down")
         time.sleep(2)
 
-        str = "nice"
+        commentlist = ["nice", "helpful", "good"]
         comment_box = driver.find_element_by_class_name("Ypffh")
         comment_box.click()
-        for i in str:
+        for i in random.choice(commentlist):
             pyautogui.press(i)
         time.sleep(2)
 
